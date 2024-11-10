@@ -1,0 +1,490 @@
+/* GLOBALS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana, sans-serif, fontawesome, segoe ui, arial;
+}
+
+/* HEADER */
+
+.container {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+  padding: 8px 16px;
+  width: 7%;
+  background-color: #009688;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+#logo a {
+  text-decoration: none;
+  color: white;
+}
+
+#logo:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+#logo i {
+  margin: 0 20px 0 10px;
+}
+
+#header-nav {
+  width: 93%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav-list-item {
+  padding: 0;
+  width: max-content;
+  height: max-content;
+}
+
+.nav-list-item a {
+  width: max-content;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+}
+
+.nav-list-item a:hover {
+  background-color: white;
+  color: black;
+}
+
+#search {
+  width: 45px;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+}
+#search:hover {
+  background-color: #009688;
+}
+
+/* PAGE-IMAGE */
+
+#page-image {
+  position: relative;
+}
+
+#page-image img {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 350px;
+  max-height: 600px;
+  width: 100%;
+}
+
+#page-image button {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  padding: 8px 16px;
+  z-index: 2;
+}
+
+#page-image button:hover {
+  background-color: #009688;
+  color: white;
+}
+
+/* TEAM */
+
+#team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+#team p {
+  padding: 30px;
+}
+#team-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card {
+  padding: 16px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card img {
+  margin-bottom: 16px;
+  width: 60%;
+  border-radius: 50%;
+}
+
+/* WORKS */
+
+#works {
+  width: 100%;
+  padding: 70px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  background-color: #333333;
+}
+
+.work-main {
+  padding: 10px;
+  width: 25%;
+  color: white;
+}
+
+.work-main p {
+  margin-top: 10px;
+}
+.work-card {
+  width: 25%;
+  margin-left: 10px;
+  background-color: white;
+  color: #333333;
+}
+.work-card img {
+  width: 100%;
+}
+
+.work-card h3,
+h4,
+li {
+  padding: 10px 0px 10px 15px;
+}
+
+.work-card ul {
+  list-style-type: none;
+}
+
+/* PRICE */
+
+#price {
+  width: 100%;
+  padding: 64px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-h2 {
+  margin: 10px 0;
+}
+
+.price-p {
+  margin-bottom: 40px;
+}
+.price-chart {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.price-card {
+  width: 33%;
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid silver;
+  transition: box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.price-card h3 {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  text-align: center;
+  align-content: center;
+}
+
+#pro {
+  background-color: #666666;
+}
+
+.price-card p {
+  padding: 5px 0px;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  align-content: center;
+  border-bottom: 1px solid silver;
+}
+
+#bill {
+  height: 120px;
+}
+
+.button {
+  width: 100%;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+#button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #009688;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+/* CONTACT */
+
+#contact {
+  width: 100%;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.contact {
+  padding: 64px 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-left {
+  width: 43%;
+  height: fit-content;
+}
+
+.contact-left h2 {
+  margin: 16px 0;
+  width: fit-content;
+  font-family: verdana, sans-serif;
+  border-bottom: 6px solid #009688;
+}
+
+.contact-left h3 {
+  font-size: 24px;
+}
+
+.contact-left p {
+  margin: 15px 0;
+}
+
+.contact-left i {
+  color: #009688;
+}
+
+.contact-right {
+  width: 57%;
+  padding: 16px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.name,
+.email,
+.message {
+  margin: 16px 0;
+}
+
+.contact-right input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.lastLine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.lastLine button {
+  width: 70px;
+  height: 38px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-family: Verdana, sans-serif;
+}
+
+.lastLine button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+/* IMAGE */
+
+#image {
+  position: relative;
+  background-image: url(/images/map.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(128, 128, 128, 0.5);
+  filter: grayscale(50%);
+  z-index: 1;
+}
+
+/* FOOTER */
+
+#footer {
+  padding: 32px 16px;
+  height: 260px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer h4 {
+  font-size: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 10px 0;
+  padding: 0 !important;
+}
+
+#footer button {
+  padding: 8px 16px;
+  height: 43px;
+  border: none;
+  background-color: #009688;
+  color: white;
+}
+
+#footer button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+#footer .socials button i {
+  font-size: 18px;
+  height: 18px;
+}
+#footer p {
+  margin: 15px 0;
+}
+
+#footer p a {
+  color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 530px) {
+  #page-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  #team-cards,
+  #works,
+  .price-chart,
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .work-main,
+  .price-card,
+  .card,
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .work-card {
+    width: 100%;
+    margin: 0;
+  }
+}

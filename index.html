@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header id="header">
+        <div id="logo">
+          <a href="/"><i class="fa-solid fa-house"></i>Logo</a>
+        </div>
+        <nav id="header-nav">
+          <ul id="nav-list">
+            <li class="nav-list-item"><a href="#team">Team</a></li>
+            <li class="nav-list-item"><a href="#works">Work</a></li>
+            <li class="nav-list-item"><a href="#price">Price</a></li>
+            <li class="nav-list-item"><a href="#contact">Contact</a></li>
+          </ul>
+          <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </nav>
+      </header>
+      <!-- Page Image -->
+      <section id="page-image">
+        <img src="./images/sailboat.jpg" alt="SailBoat" />
+        <button title="Go To W3.CSS">LEARN W3.CSS</button>
+      </section>
+      <!-- Team -->
+      <section id="team">
+        <h2>OUR TEAM</h2>
+        <p>Meet the team - our office rats:</p>
+        <div id="team-cards">
+          <div class="card">
+            <img src="./images/avatar.jpg" alt="avatar" />
+            <h3>Johnny Walker</h3>
+            <p>Web Designer</p>
+          </div>
+          <div class="card">
+            <img src="./images/avatar.jpg" alt="avatar" />
+            <h3>Rebecca Flex</h3>
+            <p>Support</p>
+          </div>
+          <div class="card">
+            <img src="./images/avatar.jpg" alt="avatar" />
+            <h3>Jan Ringo</h3>
+            <p>Boss man</p>
+          </div>
+          <div class="card">
+            <img src="./images/avatar.jpg" alt="avatar" />
+            <h3>Kai Ringo</h3>
+            <p>Fixer</p>
+          </div>
+        </div>
+      </section>
+      <!-- Works -->
+      <section id="works">
+        <div class="work-main">
+          <h2>Our Work</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="work-card">
+          <img src="./images/snow.jpg" alt="snow" />
+          <h3>Customer 1</h3>
+          <h4>Trade</h4>
+          <ul>
+            <li>Blablabla</li>
+            <li>Blablabla</li>
+            <li>Blablabla</li>
+            <li>Blablabla</li>
+          </ul>
+        </div>
+        <div class="work-card">
+          <img src="./images/lights.jpg" alt="lights" />
+          <h3>Customer 2</h3>
+          <h4>Trade</h4>
+          <ul>
+            <li>Blablabla</li>
+            <li>Blablabla</li>
+            <li>Blablabla</li>
+            <li>Blablabla</li>
+          </ul>
+        </div>
+        <div class="work-card">
+          <img src="./images/mountains.jpg" alt="mountains" />
+          <h3>Customer 3</h3>
+          <h4>Trade</h4>
+          <ul>
+            <li>Blablabla</li>
+            <li>Blablabla</li>
+            <li>Blablabla</li>
+            <li>Blablabla</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Price -->
+      <section id="price">
+        <h2 class="price-h2">PRICING</h2>
+        <p class="price-p">Choose a pricing plan that fits your needs.</p>
+        <div class="price-chart">
+          <div class="price-card">
+            <h3>Basic</h3>
+            <p><strong>10GB</strong> Storage</p>
+            <p><strong>10</strong> Emails</p>
+            <p><strong>10</strong> Domains</p>
+            <p><strong>Endless</strong> Support</p>
+            <p id="bill">
+              <i class="fa-solid fa-dollar-sign"></i> 10 <br />per month
+            </p>
+            <div class="button">
+              <button id="button"><i class="fa fa-check"></i> Sign Up</button>
+            </div>
+          </div>
+          <div class="price-card">
+            <h3 id="pro">Pro</h3>
+            <p><strong>25GB</strong> Storage</p>
+            <p><strong>25</strong> Emails</p>
+            <p><strong>25</strong> Domains</p>
+            <p><strong>Endless</strong> Support</p>
+            <p id="bill">
+              <i class="fa-solid fa-dollar-sign"></i> 25<br />per month
+            </p>
+            <div class="button">
+              <button id="button"><i class="fa fa-check"></i> Sign Up</button>
+            </div>
+          </div>
+          <div class="price-card">
+            <h3>Premium</h3>
+            <p><strong>50GB</strong> Storage</p>
+            <p><strong>50</strong> Emails</p>
+            <p><strong>50</strong> Domains</p>
+            <p><strong>Endless</strong> Support</p>
+            <p id="bill">
+              <i class="fa-solid fa-dollar-sign"></i> 50<br />per month
+            </p>
+            <div class="button">
+              <button id="button"><i class="fa fa-check"></i> Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="contact">
+          <div class="contact-left">
+            <h2>Contact Us</h2>
+            <h3>Address</h3>
+            <p>Swing by for a cup of coffee, or whatever</p>
+            <p><i class="fa-solid fa-location-dot"></i> Chicago, US</p>
+            <p><i class="fa-solid fa-phone"></i> +00 1515151515</p>
+            <p><i class="fa-solid fa-envelope"></i> test@test.com</p>
+          </div>
+          <div class="contact-right">
+            <form>
+              <div class="name">
+                <label for="name">Name</label>
+                <input type="text" id="name" required />
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="text" id="email" required />
+              </div>
+              <div class="message">
+                <label for="message">Message</label>
+                <input type="text" id="message" required />
+              </div>
+              <div class="lastLine">
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <label for="checkbox">I Like it!</label>
+                </div>
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Image -->
+      <section id="image"></section>
+      <!-- Footer -->
+      <section id="footer">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <button><i class="fa-brands fa-facebook-f"></i></button>
+          <button><i class="fa-brands fa-twitter"></i></button>
+          <button><i class="fa-brands fa-google-plus-g"></i></button>
+          <button><i class="fa-brands fa-instagram"></i></button>
+          <button><i class="fa-brands fa-linkedin-in"></i></button>
+        </div>
+        <p>Powered by <a href="">w3.css</a></p>
+      </section>
+    </div>
+  </body>
+</html>
